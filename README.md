@@ -10,10 +10,11 @@
 
 3. **环境配置和部署**
    - 在Ubuntu 22.04 LTS上部署了部署了NVlabs仓库中PoseCNN的PyTorch版本项目（环境搭建好，缺少预训练参数以及合适结构的数据集（原项目中连接失效））。
-   - 在Ubuntu 22.04 部署了PointNet且经过调试
-PointNet分类（批大小32)
+   - 在Ubuntu 22.04 部署了PointNet使用ShapeNet经调试（批大小32)显存占用如下
+
+分类
 ![11895447c542382a839ff6dc428f73f](https://github.com/Dr-Cui-s-2024-summer-FURP/QifengZhong-weekly-report/assets/114790207/d2217fe1-7e0f-4b54-b460-7fc13d701d6d)
-PointNet分割（批大小32)
+分割
 ![9caaa99d87908c5c004931b0362ae9c](https://github.com/Dr-Cui-s-2024-summer-FURP/QifengZhong-weekly-report/assets/114790207/753e8556-64d9-428c-8e02-34a475b67c6f)
 
 4.  **已解决**
