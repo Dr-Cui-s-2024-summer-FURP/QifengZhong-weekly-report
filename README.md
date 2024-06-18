@@ -28,7 +28,5 @@
    - 替换：THCudaCheck
    - 为AT_CUDA_CHECK
 5.  **其他问题**
-   - 构建数据集的方法或工具？
    - 硬件要求？
-   - 项目细节？
    - Motion Capture System组是否需要（了解/深入学习）Isaac Sim/ROS？
