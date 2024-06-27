@@ -74,8 +74,9 @@ And using this weight runed demo (refer to [issue4](https://github.com/NVlabs/Po
 
 ### Unresolved Difficulties (very frustrating!)
 1. There are many things don't understand, especially the mathematical knowledge needed, such as how to calculate the coordinates of an object in an image based on camera parameters, etc.
-
 2. Handling npz, xyz, ply files is difficult as it's hard to understand the meaning of the stored parameters.
 3. The project also includes some data related to robotic arms (e.g., joint points for grasping objects). Applying this project (PoseCNN) fully to ongoing project (motion capture) is very challenging for me. Still have no clear idea of the data structure what we need.
 4. Might need to write our own code (interface) for data processing to apply PoseCNN to our ongoing project, which requires a deep understanding of network structure and algorithm.
+5. Given that VGG focuses on classification tasks, a bold idea is to replace VGG16 in PoseCNN with another network (which might be somewhat impractical).
+
 
