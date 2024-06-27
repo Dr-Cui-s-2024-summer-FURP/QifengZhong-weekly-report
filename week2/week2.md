@@ -11,11 +11,12 @@
 
    2. Trained on the dex-ycb dataset (setup=s0).
 
-   2. Used [coco2014/train/train](http://images.cocodataset.org/zips/train2014.zip) as the background dataset during training (0.5 probability of replacing the original background). 
+   2. Used [coco2014/train/train]([COCO - Common Objects in Context (cocodataset.org)](https://cocodataset.org/#download)) as the background dataset during training (0.5 probability of replacing the original background). 
 
    4. Pre-trained weights ([vgg16](https://download.pytorch.org/models/vgg16-397923af.pth)).
 
 2. **Understanding data requirements (still unclear, see Unresolved Difficulties section)**:
+   
    1. Required data includes: object model masks, camera intrinsics, camera extrinsics (multiple cameras), and point clouds of object models.
    2. Did not find the specific usage of camera extrinsics in the code of PoseCNN project.
 3. **Understanding of project code**
@@ -43,28 +44,30 @@
 
     Downloading and extracting the dataset was a painful process! The Linux system couldn't accommodate a 120GB dataset, so I bought an SSD(If your have no space on both systems windows and linux) or mounted the Windows partition on the Linux system. This solved the problem but wasted a lot of time (switching between the two systems).
 
-2. **If ** you encounter an error here（[in the original project]([PoseCNN-PyTorch/lib/datasets/dex_ycb.py at main · NVlabs/PoseCNN-PyTorch (github.com)](https://github.com/NVlabs/PoseCNN-PyTorch/blob/main/lib/datasets/dex_ycb.py)#L151-L154)）when training
+2. **If **
 
-   Refer to [issue46]([IndexError: too many indices for array: array is 2-dimensional, but 21 were indexed · Issue #46 · NVlabs/PoseCNN-PyTorch (github.com)](https://github.com/NVlabs/PoseCNN-PyTorch/issues/46)):
+   you encounter an error here ([in the original project](https://github.com/NVlabs/PoseCNN-PyTorch/blob/main/lib/datasets/dex_ycb.py#L151-L154)) when training...
+
+   Refer to [issue46](https://github.com/NVlabs/PoseCNN-PyTorch/issues/46):
 
     The author's usage is as follows:
-
+   
    ```python
    import numpy as np
    a = (0,1)
    b = np.array([1,0])
-   print(b[a])
+print(b[a])
    ```
 
    Change it to the following to fix the error:
-
+   
    ```python
    import numpy as np
    a = (0,1)
    b = np.array([1,0])
-   print(b[np.array(a)])
+print(b[np.array(a)])
    ```
-
+   
    
 
 ### Unresolved Difficulties (very frustrating!)
