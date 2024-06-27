@@ -7,11 +7,11 @@
 ### Done
 1. **Read PoseCNN repository code**:
 
-   1. Gained some understanding of the PoseCNN project code.   - Trained on the dex-ycb dataset (setup=s0).
+   1. Gained some understanding of the PoseCNN project code. 
 
    2. Trained on the dex-ycb dataset (setup=s0).
 
-   2. Used [coco2014/train/train]([COCO - Common Objects in Context (cocodataset.org)](https://cocodataset.org/#download)) as the background dataset during training (0.5 probability of replacing the original background). 
+   2. Used [coco2014/train/train](https://cocodataset.org/#download) as the background dataset during training (0.5 probability of replacing the original background). 
 
    4. Pre-trained weights ([vgg16](https://download.pytorch.org/models/vgg16-397923af.pth)).
 
@@ -20,8 +20,8 @@
    1. Required data includes: object model masks, camera intrinsics, camera extrinsics (multiple cameras), and point clouds of object models.
    2. Did not find the specific usage of camera extrinsics in the code of PoseCNN project.
 3. **Understanding of project code**
-   1. Currently, I understand about 10% of the project code, but there is room for improvement.
-   2. I would like to mention that key points is to understand include the data reading and preprocessing in the datasets module, particularly the __init__ function and __getitem__ function, as well as the implementation of the train function.
+   1. Currently, Understand about 10% of the project code, but there is room for improvement.
+   2. Would like to mention that key points is to understand include the data reading and preprocessing in the datasets module, particularly the __init__ function and __getitem__ function, as well as the implementation of the __train__ function in __lib/fcn/train__.
 
 4. **Results**
 
@@ -37,7 +37,7 @@
 
 ![图片描述](./images/2000i.JPG)
 
- Weights after the first epoch ([checkpoint](https://drive.google.com/file/d/1MTVLZbQJKjnkJXIMnMX5M-T2DhATHbD_/view?usp=drive_link), loss did not converge for some reason![img](./images/0018D721.png)).
+ Weights after the first epoch [checkpoint](https://drive.google.com/file/d/1MTVLZbQJKjnkJXIMnMX5M-T2DhATHbD_/view?usp=drive_link) (loss did not converge for some reason ).
 
 ### Challenges (time-consuming, resolved)
 1. Insufficient memory in the Linux system to accommodate the dataset
@@ -75,5 +75,3 @@
 3. The project also includes some data related to robotic arms (e.g., joint points for grasping objects). Applying this project (PoseCNN) fully to ongoing project (motion capture) is very challenging for me. Still have no clear idea of the data structure what we need.
 4. Might need to write our own code (interface) for data processing to apply PoseCNN to our ongoing project, which requires a deep understanding of network structure and algorithm.
 
-### Conclusion
-The journey ahead is long and the task is arduous.
