@@ -39,6 +39,10 @@
 
  Weights after the first epoch [checkpoint](https://drive.google.com/file/d/1MTVLZbQJKjnkJXIMnMX5M-T2DhATHbD_/view?usp=drive_link) (loss did not converge for some reason ).
 
+And using this weight runed demo (refer to [issue4](https://github.com/NVlabs/PoseCNN-PyTorch/issues/4) if index error happend):
+
+![demo](./images/demo.JPG)
+
 ### Challenges (time-consuming, resolved)
 1. Insufficient memory in the Linux system to accommodate the dataset
 
