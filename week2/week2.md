@@ -44,30 +44,28 @@
 
     Downloading and extracting the dataset was a painful process! The Linux system couldn't accommodate a 120GB dataset, so I bought an SSD(If your have no space on both systems windows and linux) or mounted the Windows partition on the Linux system. This solved the problem but wasted a lot of time (switching between the two systems).
 
-2. **If **
-
-   you encounter an error here ([in the original project](https://github.com/NVlabs/PoseCNN-PyTorch/blob/main/lib/datasets/dex_ycb.py#L151-L154)) when training...
+2. If you encounter an error here ([in the original project](https://github.com/NVlabs/PoseCNN-PyTorch/blob/main/lib/datasets/dex_ycb.py#L151-L154)) when training...
 
    Refer to [issue46](https://github.com/NVlabs/PoseCNN-PyTorch/issues/46):
 
     The author's usage is as follows:
-   
+
    ```python
    import numpy as np
    a = (0,1)
    b = np.array([1,0])
-print(b[a])
+   print(b[a])
    ```
 
    Change it to the following to fix the error:
-   
+
    ```python
    import numpy as np
    a = (0,1)
    b = np.array([1,0])
-print(b[np.array(a)])
+   print(b[np.array(a)])
    ```
-   
+
    
 
 ### Unresolved Difficulties (very frustrating!)
