@@ -4,7 +4,7 @@
 
 # Week2
 
-### What I have done
+### Done
 1. **Read PoseCNN repository code**:
 
    1. Gained some understanding of the PoseCNN project code.   - Trained on the dex-ycb dataset (setup=s0).
@@ -69,11 +69,11 @@
    
 
 ### Unresolved Difficulties (very frustrating!)
-1. There are many things I don't understand, especially the mathematical knowledge needed, such as how to calculate the coordinates of an object in an image based on camera parameters, etc.
+1. There are many things don't understand, especially the mathematical knowledge needed, such as how to calculate the coordinates of an object in an image based on camera parameters, etc.
 
- 	2. Handling npz, xyz, ply files is difficult as it's hard to understand the meaning of the stored parameters.
- 	3. The project also includes some data related to robotic arms (e.g., joint points for grasping objects). Applying this project (PoseCNN) fully to our ongoing project (drone pose estimation) is very challenging for me. I still have no clear idea of the data structure we need.
- 	4. It is anticipated that I might need to write my own code (interface) for data processing to apply PoseCNN to the drone pose estimation project, which requires a comprehensive understanding of network structure and algorithm principles.
+2. Handling npz, xyz, ply files is difficult as it's hard to understand the meaning of the stored parameters.
+3. The project also includes some data related to robotic arms (e.g., joint points for grasping objects). Applying this project (PoseCNN) fully to ongoing project (motion capture) is very challenging for me. Still have no clear idea of the data structure what we need.
+4. Might need to write our own code (interface) for data processing to apply PoseCNN to our ongoing project, which requires a deep understanding of network structure and algorithm.
 
 ### Conclusion
 The journey ahead is long and the task is arduous.
